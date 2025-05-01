@@ -14,9 +14,7 @@ export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
   return (
     <html lang="en">
       <body>
-        <header>header</header>
-        <div className="bg-red-500">{children}</div>
-        <footer>footer</footer>
+        {children}
       </body>
     </html>
   );
