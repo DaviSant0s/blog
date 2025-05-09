@@ -1,5 +1,6 @@
-import Header from "@/components/Header";
+import { SpinLoader } from '@/components/SpinLoader';
+import clsx from 'clsx';
 
 export default function HomePage() {
-  return <Header />;
+  return <SpinLoader  containerClasses={clsx("bg-[blue] rou")} />;
 }
