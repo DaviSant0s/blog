@@ -1,5 +1,6 @@
 import Container from '@/components/Container';
 import Header from '@/components/Header';
+import PostHeading from '@/components/PostHeading';
 import PostList from '@/components/PostList';
 import { SpinLoader } from '@/components/SpinLoader';
 import Image from 'next/image';
@@ -26,9 +27,7 @@ export default async function HomePage() {
 
           <time className='text-slate-600 block text-sm/tight ' dateTime="2025-04-20">20/04/2025 10:00</time>
 
-          <h1 className='text-2xl/tight font-extrabold mb-4 sm:text-4xl'>
-            <Link href="#">Lorem ipsum dolor sit amet consectetur</Link>
-          </h1>
+          <PostHeading as='h2' url='#'>This will create the dillinger image and pull </PostHeading>
 
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
