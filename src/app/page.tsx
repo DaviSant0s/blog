@@ -31,7 +31,7 @@ export default async function HomePage() {
             20/04/2025 10:00
           </time>
 
-          <PostHeading as="h2" url="#">
+          <PostHeading as="h1" url="#">
             This will create the dillinger image and pull{' '}
           </PostHeading>
 
