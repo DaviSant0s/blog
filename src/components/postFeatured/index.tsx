@@ -1,5 +1,5 @@
 import PostCoverImage from '../PostCoverImage';
-import PostHeading from '../PostHeading';
+import PostSummary from '../PostSummary';
 
 export default function PostFeatured() {
   const slug = 'qualquer coisa';
@@ -17,25 +17,13 @@ export default function PostFeatured() {
         }}
       />
 
-      <div className="flex flex-col gap-4 sm:justify-center">
-        <time
-          className="text-slate-600 block text-sm/tight "
-          dateTime="2025-04-20"
-        >
-          20/04/2025 10:00
-        </time>
-
-        <PostHeading as="h1" url={postLink}>
-          This will create the dillinger image and pull{' '}
-        </PostHeading>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-          repellat reprehenderit iste veniam sapiente incidunt ex a impedit
-          cupiditate voluptatem atque, fugit, odio alias, maiores beatae
-          distinctio accusantium? Magni, doloribus.
-        </p>
-      </div>
+      <PostSummary
+        createdAt='2025-04-06T00:24:38.616Z'
+        postLink={postLink}
+        title="Como a escrita pode mudar sua carreira"
+        excerpt="Muitas empresas e desenvolvedores individuais escolhem o Next.js justamente porque ele consegue unir simplicidade com recursos avançados."
+        postHeading="h1"
+      />
     </section>
   );
 }
